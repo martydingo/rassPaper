@@ -7,7 +7,7 @@ class rassPaper:
 
     def clearScreen(self):
         self.display.init(self.display.FULL_UPDATE)
-        display.Clear(0xFF)
+        self.display.Clear(0xFF)
 
 if(__name__=='__main__'):
     rassPaper = rassPaper()
