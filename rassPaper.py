@@ -10,4 +10,10 @@ class rassPaper:
         self.display.Clear(0xFF)
 
 if(__name__=='__main__'):
-    rassPaper = rassPaper()
+    try:
+        rassPaper = rassPaper()
+        rassPaper.clearScreen()
+        
+    except KeyboardInterrupt:
+        epd2in13_V2.epdconfig.module_exit()
+        exit()
